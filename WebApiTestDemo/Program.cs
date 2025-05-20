@@ -1,4 +1,6 @@
 
+using WebApiTestDemo.Services;
+
 namespace WebApiTestDemo
 {
     public class Program
@@ -6,6 +8,9 @@ namespace WebApiTestDemo
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+
+            builder.Services.AddScoped<IProductService, ProductService>();
 
             // Add services to the container.
 
