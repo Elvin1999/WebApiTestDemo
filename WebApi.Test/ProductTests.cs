@@ -85,5 +85,10 @@ namespace WebApi.Test
             Assert.That(createdProduct != null);
             Assert.That(newProduct.Name, Is.EqualTo(createdProduct?.Name));
         }
+
+
+        // GetById elave edin ProductsController
+        // Then
+        //Write Test for GetById , Delete , Update
     }
 }
